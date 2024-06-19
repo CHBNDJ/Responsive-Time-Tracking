@@ -1,0 +1,395 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    background-color: #0E1323;
+    width: 1440px;
+    height: 1024px;
+    font-family: 'Rubik', sans-serif;
+}
+
+main {
+    width: 1110px;
+    height: 518px;
+    position: absolute;
+    top: 253px;
+    left: 165px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    position: relative;
+}
+
+.card-wrapper {
+    position: relative;
+    height: 244px;
+}
+
+.card {
+    background-color: #1C204B;
+    color: white;
+    width: 255px;
+    height: 199px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    margin: 18% 0;
+    padding: 2em;
+    cursor: pointer;
+}
+
+.title-container {
+    width: 195px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+h1 {
+   font-size: 18px;
+   font-weight: 500;
+}
+  
+.fas {
+   margin-left: auto;
+   color: #BBC0FF;
+}
+
+.fas:hover {
+    color: #FFFFFF;
+}
+
+.card:hover {
+   background-color: #33397A;
+   transition:  background-color 0.3s ease;
+}
+
+.card-profil {
+    width: 255px;
+    height: 518px;
+    background-image: linear-gradient(to bottom,  #5747EA 0%, #5747EA 70%, #1C204B 70%, #1C204B 100%);
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+.picture-profil {
+    border-radius: 50%;
+    width: 78px;
+    height: 78px;
+    border: 3px solid white;
+}
+
+.bloc-1 {
+    height: 354px;
+    width: 255px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.bloc-1--content {
+    width: 139px;
+    height: 116px;
+    margin: 2.5em 0;
+}
+
+.bloc-1--text {
+    width: 71px;
+    height: 18px;
+    color: #BBC0FF;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 300;
+    width: 138px;
+    height: 95px;
+}
+
+.bloc-2 {
+    height: 164px;
+    width: 255px;
+    padding: 30px;
+    gap: 21px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.bloc-2 p {
+    color: #7078C9;
+    cursor: pointer;
+}
+
+.bloc-2 p:focus {
+    color: #FFFFFF;
+}
+
+.card-img {
+    width: 255px;
+    height: 160px;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.card-img img {
+    position: absolute;
+    left: 160px;
+}
+
+.card-img-1 img {
+    bottom: 57%;
+}
+
+.card-img-2 img {
+    bottom: 55%;
+}
+
+.card-img-3 img {
+    bottom: 57%;
+}
+
+.card-img-4 img {
+    bottom: 66%;
+}
+
+.card-img-5 img {
+    bottom: 47%;
+}
+
+.card-img-6 img {
+    bottom: 65%;
+}
+
+.card-img-1 {
+    background-color: #FF8B64;
+}
+
+.card-img-2 {
+    background-color: #55C2E6;
+}
+
+.card-img-3 {
+    background-color: #FF5E7D;
+}
+
+.card-img-4 {
+    background-color: #4BCF82;
+}
+
+.card-img-5 {
+    background-color: #7335D2;
+}
+
+.card-img-6 {
+    background-color: #F1C75B;
+}
+
+.card .Daily,
+.card .Weekly,
+.card .Monthly {
+ display: none;
+}
+
+
+.card .timeframe {
+  display: none;
+  margin-top: 1.5em;
+}
+  
+.card .current {
+  font-size: 56px; /* Ajustez selon vos besoins */
+  font-weight: 300;
+}
+  
+.card .previous {
+  font-size: 15px; /* Ajustez selon vos besoins */
+  color: #BBC0FF;
+  font-weight: 400;
+  margin-top: .5em;
+}
+  
+.card .timeframe.active {
+    display: block;
+}
+
+
+
+@media screen and (max-device-width: 767.98px) {
+
+    html,body {
+        width: 100%;
+        height: 1469px;
+    }
+    
+    main {
+        width: 100%;
+        height: 1307px;
+        margin-top: 5em;
+        position: initial;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cards-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 24px;
+        position: relative;
+    }
+
+    .card-profil {
+        width: 327px;
+        height: 203px;
+        background-image: linear-gradient(to bottom,  #5747EA 0%, #5747EA 60%, #1C204B 60%, #1C204B 100%);
+        color: white;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .picture-profil {
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+        border: 3px solid white;
+    }
+    
+    .bloc-1 {
+        height: 133px;
+        width: 327px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding: 30px;
+    }
+    
+    .bloc-1--content {
+        width: 172px;
+        height: 50px;
+        margin: 2.5em 1em;
+    }
+    
+    .title {
+        font-size: 24px;
+        font-weight: 300;
+        display: inline;
+    }
+    
+    .bloc-2 {
+        height: 70px;
+        width: 327px;
+        padding: 0;
+        gap: 3em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-wrapper {
+        position: relative;
+        height: 160px;
+    }
+    
+    .card {
+        background-color: #1C204B;
+        color: white;
+        width: 327px;
+        height: 122px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        margin: 12% 0;
+        padding: 2em;
+        cursor: pointer;
+    }
+
+    .title-container {
+        width: 279px;
+        height: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+      
+      
+    .fas {
+       margin-right: .5em;
+       color: #BBC0FF;
+    }
+
+
+    .card-img {
+        width: 327px;
+        border-radius: 15px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+    .card-img img {
+        position: absolute;
+        left: 227px;
+    }
+    
+    .card .timeframe {
+        display: none;
+        margin-top: .5em;
+        width: 279px;
+        height: 38px;
+    }
+        
+    .card .current {
+        font-size: 32px; /* Ajustez selon vos besoins */
+        font-weight: 300;
+        display: inline-block;
+    }
+        
+    .card .previous {
+        font-size: 15px; /* Ajustez selon vos besoins */
+        color: #BBC0FF;
+        font-weight: 400;
+        margin-top: 3%;
+        display: inline-block;
+        position: absolute;
+        right: 7%;
+    }
+    
+   
+    
+
+}
